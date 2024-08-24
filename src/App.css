@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.active {
+  color: rgb(255, 111, 0);
+  border-bottom: 2px solid rgb(255, 111, 0);
+}
+.philo {
+  font-family: "Philosopher";
+}
+.header {
+  background: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(10px);
+  z-index: 48;
+}
+.scroll::-webkit-scrollbar {
+  overflow: hidden;
+}
+.bg {
+  background: rgba(0, 0, 0, 0.621);
+  
+}
+
+.scroll-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: hw-tex 3s alternate ease-in-out;
+  
+}
+@keyframes hw-tex {
+  0%{
+      transform: translateX(-1000px);
+  }
+}
+
+.scroll-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: hw-img 3s alternate ease-in-out;
+}
+@keyframes hw-img {
+  0%{
+      transform: translateX(1000px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
