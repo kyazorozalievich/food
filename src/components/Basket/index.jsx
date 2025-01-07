@@ -55,10 +55,10 @@ const Basket = () => {
             User Name:${inpName}
             User Address:${inpAddress}
             User Phone:${inpPhone}
-            date:${new Date().toDateString()}
             Food Name: ${telegram.map((el) => el.name)}
             Food Price: ${telegram.map((el) => el.price)}$
             Food Count: ${telegram.map((el) => el.count)}
+            date:${new Date().toDateString()}
             `,
     };
 

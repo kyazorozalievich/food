@@ -22,6 +22,7 @@ const Search = () => {
 
     useEffect(()=> {
         ParamName()
+        
     }, [data])
 
     return (
